@@ -8,9 +8,9 @@ const LoginPage = ({ isLoggedIn, onLogin }) => {
   }
 
   return (
-    <div className="jumbotron">
-      <p>Login to see secret page!</p>
-      <button className="btn btn-primary" onClick={onLogin}>Login</button>
+    <div style={{textAlign: 'center'}}>
+      <p style={{fontSize: '32px'}}>Login to see secret page!</p>
+      <button style={{padding: '.5rem', fontSize: '24px', color: '#000', background: '#5eff00'}} onClick={onLogin}>Login</button>
     </div>
   )
 }

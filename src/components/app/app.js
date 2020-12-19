@@ -32,12 +32,11 @@ export default class App extends Component {
       <ErrorBoundry>
         <SwapiServiceProvider value={this.swapiService}>
           <BrowserRouter>
-            <div className="stardb-app">
               <Header />
 
               <RandomPlanet />
               <Switch>
-                <Route path="/" exact render={() => <h2>Welcome to StarDB</h2>} />
+                <Route path="/" exact render={() => <h2 style={{fontSize: '32px', textAlign: 'center'}}>Welcome to StarDB</h2>} />
                 <Route path="/people/:id?" component={PeoplePage} />
                 <Route path="/starships" exact component={StarshipsPage} />
                 <Route path="/planets" component={PlanetsPage} />
@@ -46,7 +45,7 @@ export default class App extends Component {
                 <Route path="/login" render={() => <LoginPage onLogin={this.onLogin} isLoggedIn={isLoggedIn} />} />
                 <Route render={() => <h2>Page not found</h2>} />
               </Switch>
-            </div>
+
           </BrowserRouter>
         </SwapiServiceProvider>
       </ErrorBoundry>

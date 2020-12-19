@@ -10,7 +10,7 @@ const ItemList = (props) => {
     const label = renderLabel(item);
     
     return (
-      <li className="list-group-item"
+      <li className="row__left-item"
         key={id}
         onClick={() => onItemSelected(id)}>
         {label}
@@ -19,7 +19,7 @@ const ItemList = (props) => {
   });
 
   return (
-    <ul className="item-list list-group">
+    <ul className="row__left-list">
       {items}
     </ul>
   );

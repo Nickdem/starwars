@@ -1,27 +1,43 @@
 .header {
-  margin-top: .5rem;
-  padding-left: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: .5rem 0;
+  border-bottom: 1px solid #fff;
 }
 
-.header ul li {
+.header a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.header__nav-link .header__logo {
+  font-size: 24px;
+}
+
+.header a:hover {
+  color: #5eff00;
+}
+
+.header__nav-list {
   list-style: none;
+  display: flex;
+}
+
+.header__nav-link {
   margin: 0;
   padding: .5rem 1rem;
   border-radius: 3px;
 }
 
-.header ul li:hover {
+.header__nav-link:hover {
   background-color: #444;
 }
 
-.header a:hover {
-  text-decoration: none;
+.header__nav-link a {
+  font-size: 18px;
 }
 
-.header h3 a {
-  color: white;
-}
-
-.header h3 a:hover {
-  color: #00bc8c;
+.header__nav-link .active {
+  text-decoration: underline;
 }

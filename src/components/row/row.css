@@ -1,0 +1,13 @@
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.row__left {
+    width: 45%;
+}
+
+.row__right {
+    width: 45%;
+}
