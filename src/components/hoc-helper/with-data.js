@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import ErrorIndicator from '../error-indicator';
 import Spinner from "../spinner/spinner";
 
@@ -13,7 +13,7 @@ const withData = (View) => {
 
     componentDidMount() {
       this.update()
-    }
+    };
 
     update() {
       this.setState({
@@ -33,7 +33,7 @@ const withData = (View) => {
             loading: false
           })
         });
-    }
+    };
 
     render() {
       const { data, loading, error } = this.state;

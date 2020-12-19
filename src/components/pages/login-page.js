@@ -1,5 +1,5 @@
-import React from 'react'
-import { Redirect } from 'react-router-dom'
+import React from 'react';
+import { Redirect } from 'react-router-dom';
 
 const LoginPage = ({ isLoggedIn, onLogin }) => {
 
@@ -15,4 +15,4 @@ const LoginPage = ({ isLoggedIn, onLogin }) => {
   )
 }
 
-export default LoginPage
+export default LoginPage;

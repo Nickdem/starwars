@@ -1,8 +1,7 @@
-import React from 'react'
-import { withRouter } from 'react-router-dom'
-import Row from '../row'
+import React from 'react';
+import { withRouter } from 'react-router-dom';
+import Row from '../row';
 import { PersonDetails, PersonList } from '../sw-components';
-
 
 const PeoplePage = ({ history, match }) => {
 
@@ -14,4 +13,4 @@ const PeoplePage = ({ history, match }) => {
   )
 }
 
-export default withRouter(PeoplePage)
+export default withRouter(PeoplePage);

@@ -1,6 +1,6 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
-import Row from '../row'
+import Row from '../row';
 import { PlanetDetails,  PlanetList } from '../sw-components';
 
 
@@ -12,7 +12,7 @@ export default class PlanetsPage extends Component {
 
   onItemSelected = (selectedItem) => {
     this.setState({ selectedItem })
-  }
+  };
 
   render() {
     const {selectedItem} = this.state

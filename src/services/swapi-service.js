@@ -98,5 +98,5 @@ export default class SwapiService {
       birthYear: person.birth_year,
       eyeColor: person.eye_color
     }
-  }
+  };
 }

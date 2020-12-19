@@ -1,7 +1,7 @@
-import React from 'react'
+import React from 'react';
 
 import { StarshipList } from '../sw-components';
-import { withRouter } from 'react-router-dom'
+import { withRouter } from 'react-router-dom';
 
 const StarshipsPage = ({ history }) => {
   return (
@@ -9,4 +9,4 @@ const StarshipsPage = ({ history }) => {
   )
 }
 
-export default withRouter(StarshipsPage)
+export default withRouter(StarshipsPage);
